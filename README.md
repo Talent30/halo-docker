@@ -1,2 +1,2 @@
-# Halo-docker
- Halo blog system in Openj9
+# halo-docker
+halo blog system in Openj9
