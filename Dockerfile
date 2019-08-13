@@ -9,7 +9,8 @@ ENV TZ=${TIME_ZONE}
 ENV JVM_XMS="256m"
 ENV JVM_XMX="256m"
 
-RUN wget https://github.com/halo-dev/halo/releases/download/v1.0.3/halo-1.0.3.jar -O halo.jar
+RUN apk apk -U upgrade \
+    && wget https://github.com/halo-dev/halo/releases/download/v1.0.3/halo-1.0.3.jar -O halo.jar
 
 
 EXPOSE ${PORT}
