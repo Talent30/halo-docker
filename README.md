@@ -1,2 +1,2 @@
 # halo-docker
-halo blog system in Openj9
+java blog system running on Openj9
