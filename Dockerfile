@@ -15,4 +15,4 @@ RUN apk -U upgrade --no-cache \
 
 EXPOSE ${PORT}
 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-server","-jar","halo.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Xfuture","-jar","halo.jar"]
