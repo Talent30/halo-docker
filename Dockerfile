@@ -6,8 +6,6 @@ ARG PORT=8090
 ARG TIME_ZONE=UTC
 
 ENV TZ=${TIME_ZONE}
-ENV JVM_XMS="256m"
-ENV JVM_XMX="256m"
 
 RUN apk -U upgrade --no-cache \
     && mkdir /opt/shareclasses \
@@ -16,4 +14,4 @@ RUN apk -U upgrade --no-cache \
 
 EXPOSE ${PORT}
 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Xfuture","-Xtune:virtualized","-Xshareclasses:cacheDir=/opt/shareclasses","-jar","halo.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Xtune:virtualized","-Xshareclasses:cacheDir=/opt/shareclasses","-jar","halo.jar"]
