@@ -1,5 +1,4 @@
 FROM multiarch/alpine:arm64-latest-stable
-COPY qemu-aarch64-static /usr/bin/
 
 VOLUME /tmp
 
