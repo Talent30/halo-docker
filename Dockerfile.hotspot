@@ -8,7 +8,7 @@ ARG TIME_ZONE=UTC
 ENV TZ=${TIME_ZONE}
 
 RUN apk -U upgrade --no-cache \
-    && apk add openjdk11-jre-headless --no-cache
+    && apk add openjdk11-jre-headless --no-cache \
     && wget https://github.com/halo-dev/halo/releases/download/v1.0.3/halo-1.0.3.jar -O halo.jar
 
 
