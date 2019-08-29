@@ -9,6 +9,7 @@ ENV TZ=${TIME_ZONE}
 
 RUN apk -U upgrade --no-cache \
     && mkdir /opt/shareclasses \
+    && adduser nobdoy \
     && chown -R nobody:nobody \
     && wget https://github.com/halo-dev/halo/releases/download/v1.1.0-beta.1/halo-1.1.0-beta.1.jar -O halo.jar
 
