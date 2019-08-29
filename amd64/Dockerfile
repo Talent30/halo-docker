@@ -13,5 +13,5 @@ RUN apk -U upgrade --no-cache \
 
 
 EXPOSE ${PORT}
-
+USER nobody
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Xtune:virtualized","-Xshareclasses:cacheDir=/opt/shareclasses","-jar","halo.jar"]

@@ -12,5 +12,5 @@ RUN apk add --no-cache openjdk11-jre-headless \
 
 
 EXPOSE ${PORT}
-
+USER nobody
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","halo.jar"]
