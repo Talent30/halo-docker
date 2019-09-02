@@ -9,7 +9,7 @@ ENV TZ=${TIME_ZONE}
 
 RUN apk -U upgrade --no-cache \
     && mkdir /opt/shareclasses \
-    && wget https://github.com/halo-dev/halo/releases/download/v1.1.0-beta.1/halo-1.1.0-beta.2.jar -O halo.jar
+    && wget https://github.com/halo-dev/halo/releases/download/v1.1.0-beta.2/halo-1.1.0-beta.2.jar -O halo.jar
 
 
 EXPOSE ${PORT}
